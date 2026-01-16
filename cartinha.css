@@ -32,3 +32,32 @@ html, body {
 .paragraph {
     text-indent: 24px;
 }
+
+@media (max-width: 400px) {
+    html, body {
+        height: auto;
+    }
+
+    .text-container {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transform: none;
+        z-index: 1;
+        position: absolute;
+        /* opacity: 0.1; */
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-weight: bold;
+    }
+
+    .planetarium {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        margin: 0;
+    }
+}

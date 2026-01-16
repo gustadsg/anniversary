@@ -23,8 +23,17 @@ const base = {
     constellations: true, 
 }
 
+function isMobile() {
+    return screen && (screen.width < 400)
+}
 
 S(document).ready(function() {
+    if(isMobile()) {
+        text_container = document.querySelector(".text-container")
+        skymap = document.querySelector("#pollymap")
+        skymap.style.height= text_container.offsetHeight + "px"
+    }
+    
 	S.virtualsky({
         ...base,
 		id: 'pollymap',	// This should match the ID used in the DOM
@@ -32,4 +41,5 @@ S(document).ready(function() {
         latitude: pollys.latitude,
         longitude: pollys.longitude, 
 	});
+
 });
