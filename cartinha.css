@@ -1,3 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #000305;
+}
+
+.content {
+    height: 100%;
+    position: relative;
+}
+
+.planetarium {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 24px;
+    border-radius: 4px;
+}
+
 .paragraph {
     text-indent: 24px;
 }
